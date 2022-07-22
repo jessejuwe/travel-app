@@ -1,0 +1,11 @@
+import { createGlobalStyle } from 'styled-components';
+
+export const GlobalStyles = createGlobalStyle`
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+    /* background: #ff9c00; */
+    font-family: 'Bebas Neue', cursive;
+}`;
