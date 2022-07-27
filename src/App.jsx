@@ -7,7 +7,9 @@ import LoadingSpinner from './components/UI/LoadingSpinner';
 
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
-import SignIn from './pages/SignIn';
+import Products from './pages/Products';
+import Services from './pages/Services';
+import SignUp from './pages/SignUp';
 import WatchTrailer from './pages/WatchTrailer';
 
 const App = () => {
@@ -21,7 +23,9 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} exact />
         <Route path="/trailers" element={<WatchTrailer />} />
-        <Route path="/sign-in" element={<SignIn />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/sign-up" element={<SignUp />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Fragment>

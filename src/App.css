@@ -8,9 +8,6 @@
 .services,
 .products,
 .sign-up,
-/* .contact-us,
-.marketing,
-.consulting, */
 .centered,
 .not-found {
   display: flex;
@@ -20,15 +17,6 @@
   text-align: center;
   font-size: 3rem;
 }
-
-/* .home {
-  background-image: url('./assets/images/img-1.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
-} */
 
 .services {
   background-image: url('./assets/images/img-2.jpg');
@@ -48,15 +36,6 @@
   font-size: 100px;
 }
 
-/* .contact-us {
-  background-image: url('./assets/images/img-4.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
-} */
-
 .sign-up {
   background-image: url('./assets/images/img-8.jpg');
   background-position: center;
@@ -65,15 +44,6 @@
   color: #fff;
   font-size: 100px;
 }
-
-/* .marketing {
-  background-image: url('./assets/images/img-6.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
-} */
 
 .consulting {
   background-image: url('./assets/images/img-5.jpg');
@@ -97,28 +67,22 @@
 
 @media screen and (max-width: 960px) {
   .home,
-.services,
-.products,
-.sign-up,
-/* .contact-us,
-.marketing,
-.consulting, */
-.centered,
-.not-found {
+  .services,
+  .products,
+  .sign-up,
+  .centered,
+  .not-found {
     font-size: 2rem;
   }
 }
 
 @media screen and (max-width: 768px) {
   .home,
-.services,
-.products,
-.sign-up,
-/* .contact-us,
-.marketing,
-.consulting, */
-.centered,
-.not-found {
+  .services,
+  .products,
+  .sign-up,
+  .centered,
+  .not-found {
     font-size: 1rem;
   }
 }
