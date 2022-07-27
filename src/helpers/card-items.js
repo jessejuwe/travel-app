@@ -4,7 +4,7 @@ import Image4 from '../assets/images/img-4.jpg';
 import Image8 from '../assets/images/img-8.jpg';
 import Image9 from '../assets/images/img-9.jpg';
 
-export const CARD_ITEMS = [
+export const CARD_ITEMS_ONE = [
   {
     src: Image9,
     text: 'Explore the hidden waterfall deep inside the Amazon Jungle',
@@ -17,6 +17,9 @@ export const CARD_ITEMS = [
     label: 'Luxury',
     path: '/services',
   },
+];
+
+export const CARD_ITEMS_TWO = [
   {
     src: Image3,
     text: 'Set Sail in the Atlantic Ocean visiting Uncharted Waters',

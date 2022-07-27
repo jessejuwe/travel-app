@@ -1,4 +1,4 @@
-import { CARD_ITEMS } from '../../helpers/card-items';
+import { CARD_ITEMS_ONE, CARD_ITEMS_TWO } from '../../helpers/card-items';
 import CardItems from './CardItems';
 import './Cards.css';
 
@@ -9,7 +9,18 @@ const Cards = () => {
       <div className="cards__container">
         <div className="cards__wrapper">
           <ul className="cards__items">
-            {CARD_ITEMS.map((item, index) => (
+            {CARD_ITEMS_ONE.map((item, index) => (
+              <CardItems
+                id={index}
+                src={item.src}
+                text={item.text}
+                label={item.label}
+                path={item.path}
+              />
+            ))}
+          </ul>
+          <ul className="cards__items">
+            {CARD_ITEMS_TWO.map((item, index) => (
               <CardItems
                 id={index}
                 src={item.src}
