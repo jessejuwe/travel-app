@@ -1,5 +1,4 @@
 import Cards from '../containers/CardItems/Cards';
-import Footer from '../containers/Footer/Footer';
 import MainSection from '../containers/MainSection/MainSection';
 
 const Home = () => {
@@ -7,7 +6,6 @@ const Home = () => {
     <div>
       <MainSection />
       <Cards />
-      <Footer />
     </div>
   );
 };

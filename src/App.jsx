@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import './App.css';
 
 import Navbar from './layouts/Navbar';
+import Footer from './containers/Footer/Footer';
 import LoadingSpinner from './components/UI/LoadingSpinner';
 
 import Home from './pages/Home';
@@ -28,6 +29,7 @@ const App = () => {
         <Route path="/sign-up" element={<SignUp />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <Footer />
     </Fragment>
   );
 };
