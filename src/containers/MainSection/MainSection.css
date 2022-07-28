@@ -55,6 +55,11 @@ button:hover {
 }
 
 @media screen and (max-width: 960px) {
+  .hero-container {
+    /* prettier-ignore */
+    background: url('../../assets/images/img-home.jpg') center center/cover no-repeat;
+  }
+
   .hero-container > h1 {
     font-size: 70px;
     margin-top: -150px;

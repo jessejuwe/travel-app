@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 import { Button } from '../components/Button/Button';
 import { MenuItems } from '../helpers/MenuItems';
 import './Navbar.css';
-import classes from './Navbar.module.css';
 
 const Navbar = () => {
   const [clicked, setClicked] = useState(false);
   const [showButton, setShowButton] = useState(true);
+  const [navbar, setNavbar] = useState(false);
 
   const clickHandler = () => setClicked(!clicked);
 
@@ -24,13 +24,21 @@ const Navbar = () => {
   // Event Listener for resizing window
   window.addEventListener('resize', showButtonHandler);
 
+  const navbarBackgroundHandler = () => {
+    if (window.scrollY >= 80) setNavbar(true);
+    else setNavbar(false);
+  };
+
+  // Event Listener for scroll
+  window.addEventListener('scroll', navbarBackgroundHandler);
+
   return (
-    <nav className={classes.navbar}>
-      <div className={classes['navbar-container']}>
-        <Link to="/" className={classes['navbar-logo']} onClick={closeHandler}>
+    <nav className={navbar ? 'navbar active' : 'navbar'}>
+      <div className="navbar-container">
+        <Link to="/" className="navbar-logo" onClick={closeHandler}>
           TRVL <i className="fa fa-plane" />
         </Link>
-        <div className={classes['menu-icon']} onClick={clickHandler}>
+        <div className="menu-icon" onClick={clickHandler}>
           <i className={clicked ? 'fas fa-times' : 'fas fa-bars'} />
         </div>
         <ul className={clicked ? 'nav-menu active' : 'nav-menu'}>

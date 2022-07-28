@@ -1,4 +1,4 @@
-import { Suspense, Fragment } from 'react';
+import { Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
 
@@ -18,7 +18,7 @@ const App = () => {
   const fallbackUI = (<div className='centered'><LoadingSpinner /></div>);
 
   return (
-    <Fragment>
+    <div className="App">
       <Suspense fallback={fallbackUI} />
       <Navbar />
       <Routes>
@@ -30,7 +30,7 @@ const App = () => {
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
-    </Fragment>
+    </div>
   );
 };
 
